@@ -1,4 +1,14 @@
 pyyaml
 python-box
 Flask
+langchain 
+langchain-text-splitters 
+langchain-community
+langchain[huggingface]
+langchain-huggingface
+langchain-core
+torch
+transformers
+sentence-transformers
+bs4
 -e .
