@@ -4,11 +4,12 @@ Flask
 langchain 
 langchain-text-splitters 
 langchain-community
-langchain[huggingface]
+langchain[google-genai]
+bs4
+python-dotenv
+pypdf
 langchain-huggingface
-langchain-core
+sentence-transformers
 torch
 transformers
-sentence-transformers
-bs4
 -e .

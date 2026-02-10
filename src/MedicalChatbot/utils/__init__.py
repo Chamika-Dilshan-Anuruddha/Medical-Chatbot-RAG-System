@@ -20,5 +20,6 @@ def create_directories(paths:list[Path]):
     try:
         for path in paths:
             os.makedirs(path, exist_ok=True)
+            logger.info(f"Directory: {path} is created")
     except Exception as e:
         raise CustomException(e,sys)
