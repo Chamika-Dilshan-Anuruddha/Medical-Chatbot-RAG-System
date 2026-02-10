@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9dee68a404.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>This is test</h1>
+    <div class="chat-container-holder">
+      <div class="chat-container">
+        <div class="box box-header">
+          <div class="header-icon">
+            <img class="header-img-icon" src="../static/images/bot-icon.webp" />
+          </div>
+          <div class="header-text">Medical Help Chat Bot</div>
+        </div>
+        <div class="box box-body" id="message-body"></div>
+        <div class="box box-message">
+          <form>
+            <input
+              class="message-input"
+              type="text"
+              name="query"
+              id="query"
+              placeholder="Ask anything about medical details"
+            />
+            <button class="btn" type="button" onclick="sendData()" name="send">
+              <i class="fa-solid fa-paper-plane send-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/js/index.js"></script>
   </body>
 </html>
