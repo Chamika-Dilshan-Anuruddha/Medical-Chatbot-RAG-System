@@ -86,7 +86,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 
@@ -117,6 +116,44 @@ body {
     width: 4rem;
     height: 4rem;
     color: white;
+}
+
+
+.clear-icon{
+    position: relative;
+    top: 0.5rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+}
+
+
+@media(max-width:700px){
+
+    .chat-container{
+        height: 80vh;
+        width: 30rem;
+        grid-template-rows:4rem auto 10rem;
+    }
+
+    .message-input{
+        margin-left: 2rem;
+    }
+
+    .btn{        
+        left: 10rem; 
+        top: 0.2rem;   
+    }
+
+
+}
+
+
+@media(max-width:600px){
+    .chat-container-holder{
+        padding: 10rem;     
+    }
 }
 
 
